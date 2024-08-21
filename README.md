@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Obteniendo datos sobre números
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En este práctico implementaremos una aplicación que nos permita obtener datos randoms sobre determinados números, fechas y años.
+Para ello, se debe completar la componente `App` del presente repositorio.
 
-## Available Scripts
+1. Para comenzar, se debe forkear el siguiente [repositorio](https://github.com/fedevirgolini-itr/numberFacts) y luego clonarlo.
+Posteriormente se deben instalar las dependencias y luego inicializar la aplicación para observar lo ya implementado.
 
-In the project directory, you can run:
+Notemos que la aplicación ya cuenta con la interfaz gráfica, que consta de dos secciones:
 
-### `npm start`
+* Sección número: dónde el usuario ingresa un determinado número para que posteriormente se muestre un hecho sobre el mismo.
+* Sección fecha: dónde el usuario ingresa una fecha específica para que posteriormente se muestren hechos sobre la fecha y el año ingresados.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Abrir la implementación de la aplicación y leer el código de la componente `App`.
+Identificar cada una de sus partes.
+Lo importante es entender el comportamiento y razón de ser de cada una de sus partes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Investigar sobre el uso de la API [numbersapi](http://numbersapi.com/#42).
+Identificar sus diferentes endpoints y formatos de respuesta.
+¿Cómo son los diferentes endpoints que tiene la API?
+¿Qué forma tiene cada uno de ellos?
+¿Qué se debe hacer para que la API me devuelva un documento en formato json?
 
-### `npm test`
+4. Terminar de implementar la primera sección de la Aplicación.
+Cuando se presiona el botón se debe mostrar un dato sobre el número ingresado.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Terminar de implementar la segunda sección de la aplicación.
+Al presionar el botón se debe mostrar un dato sobre el día y mes ingresado y también se debe mostrar un dato sobre el año ingresado.
