@@ -14,7 +14,10 @@ function App() {
   const [dateTrivia, setDateTrivia] = useState("");
   const [yearTrivia, setYearTrivia] = useState("");
 
-  const handleNumberChange = (event) => setNumber(event.target.value)
+  const handleNumberChange = (event) => {
+    if (event.target.value == "") { setNumber(0); }
+    else { setNumber(event.target.value); }
+  };
 
   const handleDateChange = (event) => {
     const inputDate = event.target.value;
@@ -26,24 +29,24 @@ function App() {
     });
   }
 
-  const onSend = (e) => {
-    if (e.target.id == 'numberSend') {
+  const onSend = (event) => {
+    if (event.target.id == 'numberSend') {
       fetch(`http://numbersapi.com/${number}`)
-      .then(res => res.text())
-      .then(res => setNumTrivia(res))
-      .catch(error => console.log(error));
+        .then(res => res.text())
+        .then(res => setNumTrivia(res))
+        .catch(error => console.log(error));
     }
-    else if (e.target.id == 'dateSend') {
+    else if (event.target.id == 'dateSend') {
       fetch(`http://numbersapi.com/${date.month}/${date.day}/date`)
-      .then(res => res.text())
-      .then(res => setDateTrivia(res))
-      .catch(error => console.log(error));
-  
+        .then(res => res.text())
+        .then(res => setDateTrivia(res))
+        .catch(error => console.log(error));
+
       fetch(`http://numbersapi.com/${date.year}/year`)
-      .then(res => res.text())
-      .then(res => setYearTrivia(res))
-      .catch(error => console.log(error));
-    }    
+        .then(res => res.text())
+        .then(res => setYearTrivia(res))
+        .catch(error => console.log(error));
+    }
   };
 
 
